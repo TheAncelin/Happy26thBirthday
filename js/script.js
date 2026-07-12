@@ -29,24 +29,7 @@ window.addEventListener("load", () => {
 });
 
 
-/* ============================================
-   LENIS SMOOTH SCROLL
-============================================ */
 
-if (typeof Lenis !== "undefined") {
-    const lenis = new Lenis({
-        duration: 1.3,
-        smoothWheel: true,
-    });
-
-    function raf(time) {
-        lenis.raf(time);
-        requestAnimationFrame(raf);
-    }
-
-    requestAnimationFrame(raf);
-} else {
-    console.warn("Lenis failed to load.");
 
 
 /* ============================================
